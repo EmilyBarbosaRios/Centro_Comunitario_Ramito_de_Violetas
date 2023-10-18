@@ -1,0 +1,67 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+        background:none;
+        float: left;
+        padding: 0px;
+        border-style: none;
+    }
+body{
+    background-image: url(./SRC/img/Fondo\ programas.jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+        display: flex;
+        float:left;   
+        background:linear-gradient(to top, purple, rgb(241, 149, 241, 55%));
+        color:white;
+        padding: 10px 20px;
+        margin: 0vw 0.3vw 0vw 0vw;
+        text-decoration:none;
+        border-radius: 5px;
+    }
+ul{
+        float: right;
+    }
+.container{
+        /*display:flex;*/
+        flex-direction: row;
+        background: radial-gradient(white, rgba(173, 16, 173, 50%));
+        gap: 200px;
+        margin: 30px;
+        border-radius: 4vw;
+        justify-content: center;
+        margin: auto 2vw 2vw 2vw;
+    }
+    .main{
+        font-size: 20pt;
+        padding: 50px;
+    }
+    .main h1{
+        color:palevioletred;
+        font-size: 50px;
+        text-shadow: 2px 2px  #21032e5b;
+        text-decoration-thickness:10%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .section{
+        text-align: center;
+        padding:0px;
+        margin: auto 2vw 2vw 2vw;
+    
+      
+    }
+p{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

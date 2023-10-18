@@ -1,0 +1,83 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: url(./SRC/img/mision\ fondo.jpeg);
+    background-color: #de8deb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a{
+    display: flex;
+    float:left;   
+    background:linear-gradient(to top, purple, rgb(241, 149, 241, 55%));
+    color:white;
+    padding: 10px 20px;
+    margin: 0vw 0.3vw 0vw 0vw;
+    text-decoration:none;
+    border-radius: 5px;
+}
+ul{
+    float: right;
+}
+#logo{
+    background:none;
+    float: left;
+    padding: 0px;
+    border-style: none;
+}
+
+.titulo{
+    font-size: 45px;
+    color: #600f6c;
+    margin:20vw 10vw auto;
+    text-shadow: 2px 2px  #21032e5b;
+    text-decoration: underline rgba(220, 36, 220, 0.4);
+    text-underline-position: auto;
+    text-decoration-thickness:15%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bloques{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+#mision{
+    text-align: center;
+    margin: auto 2vw 2vw 2vw;
+    padding: 20px;
+    background-color: rgb(205, 43, 226, 25%);
+    color: #2d0332;
+    backdrop-filter: blur(10px);
+    border-radius: 4vw;
+    box-shadow: 8px 10px 12px -3px rgba(0,0,0,0.2);
+}
+#vision{
+    text-align: center;
+    margin: auto 2vw 2vw 2vw;
+    padding: 20px;
+    background-color: rgb(205, 43, 226, 25%);
+    color:#2d0332;
+    backdrop-filter: blur(10px);
+    border-radius: 4vw;
+    box-shadow: 8px 10px 12px -3px rgba(0,0,0,0.2);
+}
+#valores{ 
+    text-align:left;
+    margin: auto 2vw 2vw 2vw;
+    padding: 20px;
+    background-color: rgb(205, 43, 226, 25%);
+    color:#2d0332;
+    backdrop-filter: blur(10px);
+    border-radius: 4vw;
+    box-shadow: 8px 10px 12px -3px rgba(0,0,0,0.2);
+    
+}

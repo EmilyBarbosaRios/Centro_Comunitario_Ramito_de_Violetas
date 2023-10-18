@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./SRC/img/Logo Ramito de Violetas.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./styleprogramas.css">
+    <title>Programas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            min-height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+        .grid-container > *{
+           text-align: center;
+           border-radius: 15px;
+           padding: 10px;
+        }
+        .header{
+            grid-area: header;
+            
+        }
+        .navbar{
+            grid-area: navbar;
+            
+        }
+        
+        .main{
+            grid-area: main;
+            
+        }
+        .section{
+            grid-area: section;
+            
+        }
+        .article{
+            grid-area: article;
+            
+        }
+        /*Teléfono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+            "header"
+            "navbar"
+            "main"
+            "section"
+            "article"
+            ;
+        }
+        /*Para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: 200px auto;
+                grid-template-rows: 100px 50px auto 600px;
+                grid-template-areas: 
+                "header navbar"
+                "main main"
+                "section section"
+                "article article";
+            }
+        }
+        /*Para escritorio*/
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: 200px auto ;
+                grid-template-rows: 100px 50px 80px 900px;
+                grid-template-areas: 
+                "header header header"
+                "navbar navbar navbar"
+                "main main main"
+                "section section section"
+                "article article article";
+            }
+        }
+        
+    </style>
+</head>
+<body class="grid-container">
+    <header class="header"> <a id="logo" href=""><img src="./SRC/img/Logo Ramito de Violetas.jpeg" alt="logo de ramitos de nuevo" width="100rem" height="90rem"> </a></header>
+    <nav class="navbar">
+    <ul>
+        <a href="./index.html">Inicio</a>
+        <a href="./Quienes somos.html">¿Quiénes somos?</a>
+        <a href="./Programas.html">Programas</a>
+        <a href="./servicios.html">Servicios</a>
+        <a href="./Contacto.html">Contacto</a>
+    </ul>
+    </nav>
+    <main class= "main"><h1>Programas</h1></main>
+    <section class="section">
+        <div class="container">
+            <div>
+            <h2>Talleres culturales de manualidades</h2>
+                <img src="./SRC/img/manualidades.jpeg" alt="" width="250px" height="150px">
+                <p>En este programa podrás emplear distintas técnicas decorativas y artísticas con diferentes materiales.</p>  
+                <br/>
+            </div>
+            <div>
+            <h2>Clases de computación</h2>
+            <img src="./SRC/img/computación.jpeg" alt="" width="250px" height="150px">
+                <p>En este programa podrás aprender las bases de la tecnología y la computación.</p>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div>
+                <h2>Taller de liderazgo</h2>
+                <img src="./SRC/img/liderazgo.jpeg" alt="" width="250px" height="150px">
+                    <p>Busca que logren desarrollar habilidades de liderazgo, confianza en sí mismas y toma de decisiones.</p>
+                    <br/>
+            </div>
+            <div>
+                    <h2>Promoción deportiva</h2>
+                    <img src="./SRC/img/mujeres deportivas.jpg">
+                    <p>Este programa busca promover la práctica recreativa y deportiva para una vida saludable.</p>
+             </div>
+
+        </div>
+
+    </section>
+    <article class="article"><div class="container">
+        
+       <div>
+           <h2>Círculos de lectura</h2>
+           <img src="./SRC/img/círculo de lectura mujeres.jpg">
+           <p>A través de la lectura, en este programa podrás dialogar y compartir opiniones sobre algún libro.</p>
+           <br/>
+        </div>
+       <div>
+           <h2>Emprendimiento</h2>
+           <img src="./SRC/img/Programa de mujeres emprendiendo.jpg">
+           <p>Les brindaremos las bases para crear un negocio y se les asesorará para su buen funcionamiento.</p>
+       </div>
+   </div></article>
+    
+</body>
+</html>

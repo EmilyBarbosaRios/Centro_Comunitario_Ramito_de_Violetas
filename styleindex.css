@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100%;
+}
+html{
+    height: 100%;
+}
+.grid-container > *{
+   text-align: center;
+   padding: 10px;
+}
+.header{
+    grid-area: header;
+    /*background-color: crimson;*/
+}
+.head{
+    grid-area: head;
+    /*background-color: rgb(251, 255, 0);*/
+}
+.navbar{
+    grid-area: navbar;
+    /*background-color: darkorange;*/
+}
+.sidebar{
+    grid-area: sidebar ;
+    /*background-color: blueviolet;*/
+}
+.main{
+    grid-area: main;
+    /*background-color: aquamarine;*/
+}
+.footer{
+    grid-area: footer;
+    /*background-color: coral;*/
+}
+/*Teléfono*/
+@media (min-width:600px){
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "head"
+    "main"
+    "sidebar"
+    "footer"
+    ;
+}
+}
+/*Para tablet*/
+@media (min-width:768px){
+    .grid-container{
+        grid-template-columns: 300px auto ;
+        grid-template-rows: 100px 50px auto auto 100px;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "head head"
+        "sidebar main"
+        "footer footer";
+    }
+}
+/*Para escritorio*/
+@media (min-width:900px){
+    .grid-container{
+        grid-template-columns: 300px auto ;
+        grid-template-rows: 100px 60px auto 500px 100px;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "head head head"
+        "sidebar sidebar main"
+        "footer footer footer";
+    }
+/*estilos css*/
+}
+body{
+    background-color: rgb(220, 143, 198);
+}
+.header{
+    color: rgb(128, 32, 128);
+}
+nav a {
+    background: linear-gradient(to top, purple, rgb(241, 149, 241));
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+ .navbar{
+    margin-left: auto;
+ }
+a:hover {
+    color: rgb(219, 203, 21);
+}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:end;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Añade relleno para crear espacio entre el logotipo y el título */
+  }
+  
+  #titulo {
+    margin: 0;
+  }
+  
+  #logo {
+    order: -1; /* Cambia el orden del logotipo para que aparezca primero en la izquierda */
+  }
+
+  .head .portada{
+    background-size: 100% 100%; /* Ajusta el ancho y alto al 100% */
+    background-position: top center; /* Posiciona la imagen en la parte superior del section */
+    color: white; /* Cambia el color del texto para que sea legible en la imagen de fondo */
+    text-align: center; /* Centra el texto en el header */
+    padding: 50px 0; /* Agrega relleno arriba y abajo del texto para separarlo de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  .head p {
+    background: rgba(239, 124, 191, 0.5); /* Agrega un fondo semitransparente detrás del texto para mejorar la legibilidad */
+    padding: 50px;
+    border-radius: 5px;
+    font-size: 24pt;
+  }
+
+.main{
+    font-size: 20pt;
+    padding: 100px;
+}
+.main h2{
+    color: rgb(243, 31, 115);
+}
+.sidebar{
+    font-size: 15pt;
+    padding: 10px;
+}
+.sidebar img{
+    padding: 10px;
+    margin-top: 10px;
+}
+#contacto1 p{
+  text-align: justify; /* Justificar el texto */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente el contenido */
+  align-items: center; /* Centrar verticalmente el contenido */
+}
+ #lista1{
+    list-style-type: disc; /* Cambia el estilo de la viñeta a círculos rellenos (disc) */
+   list-style-position: inside;
+    margin-left: 20px; 
+    display: inline-block;
+    text-align: justify; /* Justificar el texto */
+  align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.footer{
+font-size: 15pt;
+text-align: center;
+}
+#piesito{
+color: rgb(114, 43, 122);
+align-items: center;
+padding: 10px;
+margin-top: 20px;
+}

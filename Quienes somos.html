@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quienes somos?</title>
+    <link rel="stylesheet" href="./stylequienessomos.css">
+    <link rel="shortcut icon" href="./SRC/img/Logo Ramito de Violetas.jpeg" type="image/x-icon">
+    <style>
+
+    .header{
+        grid-area: header;
+    }
+    .nav{
+        grid-area: nav;
+    }
+    .section{
+        grid-area: section;
+    }
+    .article{
+        grid-area: article;
+    }
+     /*telefono*/
+     .grid-container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "article"
+            ;
+        }
+        /*para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: 380px auto;/*dos columnas*/
+                grid-template-rows:  100px auto auto auto;
+                grid-template-areas: 
+                "header nav"
+                "article section"
+
+                ;
+            }
+        }
+         /*para escritorio*/
+         @media(min-width:900px)/*punto de quiebre*/{
+            .grid-container{
+                grid-template-columns: 200px 
+                auto;/*dos columnas*/
+                grid-template-rows: 100px auto auto auto;
+                grid-template-areas: 
+                "header nav nav"
+                "article article section"
+                ;
+            }
+        }
+    </style>
+</head>
+<body class="grid-container">
+
+<header class="header">
+        <a id="logo" href=""><img src="./SRC/img/Logo Ramito de Violetas.jpeg" alt="logo de ramitos de nuevo" width="90rem" height="90rem"> </a>
+</header>
+
+    <nav class="nav" class="container">
+       <ul>
+         <a href="./index.html">Inicio</a>
+         <a href="./Quienes somos.html">¿Quiénes somos?</a>
+         <a href="./Programas.html">Programas</a>
+         <a href="./servicios.html">Servicios</a>
+         <a href="./Contacto.html">Contacto</a>
+       </ul>
+    </nav>
+ 
+  <section class="section">
+    <h1 class="titulo">¿Quíenes somos?</h1>
+  </section>
+
+ <div class="article" class="bloques" class="container">
+    <div id="mision">
+     <h1>Misión</h1>
+     <p>Generar espacios seguros para brindar servicis de ayuda en situaciones de violencia y denuncia en caso de haber sido victimas de un delito, ademas de promover el desarollo integral de las mujeres de la comunidad por medio de cursos y centros de estudio mejorando su calidad de vida.</p>
+    </div>
+
+    <div id="vision">
+    <h1>Visión</h1>
+    <p>Brindar apoyo y acompañamiento a mujeres en situacion de violencia y víctimas de delitos; Logrando que las mujeres de la comunidad puedan capacitarse y desarrollar habiliades para obtener un mejor futuro.</p>
+    </div>
+
+    <div id="valores">
+        <h1>Valores</h1>
+        <ol>
+            <li>Solidaridad</li>
+            <li>Empatía</li>
+            <li>Integridad</li>
+            <li>Respeto</li>
+        </ol>
+    </div>
+</div>
+
+
+
+    </div>
+
+
+</body>
+</html>

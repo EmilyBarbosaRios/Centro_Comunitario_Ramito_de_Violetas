@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./SRC/img/Logo Ramito de Violetas.jpeg" type="image/x-icon">
+    <title>Contacto</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    body, html {
+        height: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        background: linear-gradient(to top, purple, rgb(241, 149, 241, 55%));
+        color: white;
+        padding: 10px 20px;
+        margin-right: 0.3vw;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    ul {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "header"
+            "navbar"
+            "head"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    .header, .navbar, .head, .main, .sidebar, .footer {
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: rgb(219, 59, 219);
+        text-align: center;
+    }
+
+    .head {
+        grid-area: head;
+        background-color: rgb(236, 121, 228);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: rgb(158, 59, 158);
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: pink;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: rgb(222, 63, 185);
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: rgb(250, 92, 245);
+    }
+
+    .contact-container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 10px; /* Añadido para dar un pequeño espacio en los lados */
+    }
+    .imagen-centrada {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+    /* Para tablet */
+    @media(min-width:768px) {
+        .grid-container {
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas:
+                "header header"
+                "navbar navbar"
+                "head head"
+                "sidebar main"
+                "footer footer";
+        }
+    }
+
+    /* Para escritorio */
+    @media(min-width:900px) {
+        .grid-container {
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas:
+                "header header"
+                "navbar navbar"
+                "head head"
+                "sidebar main"
+                "footer footer";
+        }
+    }
+
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    </style>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <a id="logo" href=""><img src="./SRC/img/Logo Ramito de Violetas.jpeg" alt="logo de ramitos de nuevo"
+                width="80rem" height="80rem"> </a>
+        <h1 id="titulo">Centro Comunitario "Ramito de Violetas"</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <a href="./index.html">Inicio</a>
+            <a href="./Quienes somos.html">¿Quiénes somos?</a>
+            <a href="./Programas.html">Programas</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./contactorv.html">Contacto</a>
+        </ul>
+    </nav>
+    <section class="head">
+        <div>
+            <img id="portada" src="./SRC/img/sororidad.jpeg" class="imagen-centrada" alt="sororidad" width="1000px" height="400px" /> <br />
+            <strong>
+                <p1>¡Ven acercate podemos asesorarte y ofrecerte un tratamiento adecuado según tus necesidades y
+                    posibilidades económicas! </p1>
+            </strong>
+        </div>
+    </section>
+    <article class="main">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.250089611658!2d-99.15168100650264!3d19.452870992212695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9216d769879%3A0x42a10f904725544!2sTlatelolco%2C%2006900%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1696966236591!5m2!1ses-419!2smx"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe><br>
+        <p1>Dirección<p1> <br />
+                <p2>Margarita Maza de Juárez 150, Patera Vallejo I Secc, Gustavo A. Madero, 07710 Ciudad de México, CDMX
+                </p2>
+                <h2>Horarios de operación</h2>
+                <p3>Lunes - Viernes 8:00 am - 5:00 pm</p3><br>
+                <p4> Sábados 9:00 am a 1:00 pm</p4><br>
+                <p5>Domingos cerrado</p5><br>
+    </article>
+    <aside class="sidebar">
+        <form class="formulario">
+            <p> Compartenos tu opinión</p>
+            <label for="Nombre">Nombre</label> <br>
+            <input type="text" name="Nombre"> <br>
+            <label for="Teléfono">Teléfono</label> <br>
+            <input type="tel" name="Teléfono"> <br>
+            <label for="Correo">Correo electronico</label> <br>
+            <input type="text" name="Correo"><br>
+            <label for="comentarios">Mensaje</label><br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+            </fieldset>
+            <button class="uno">Enviar</button>
+            <fieldset>
+        </form>
+    </aside>
+
+
+    <footer class="footer">
+        <div class="contact-container">
+            <div class="contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="purple" id="telefono"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    <text x="120" y="110" writing-mode="lr" glyph-orientation-horizontal="0">Horizontal</text>
+                </svg>
+                <span>Teléfono: (58)738932282</span>
+            </div>
+            <div class="contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="purple" id="correo"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                </svg>
+                <span>Correo electrónico
+                </span>
+                <div class="emails">
+                    <span>administracion@violetas.org.mx</span>
+                    <span>donativos@violetas.org.mx</span>
+                    <span>contacto@violetas.org.mx</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="purple" id="facebook"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+                <span>Centro comunitario "Ramillete de violetas"</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
